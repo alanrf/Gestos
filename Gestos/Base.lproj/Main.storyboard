@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gestos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Último gesto realizado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdp-dg-xG9">
+                                <rect key="frame" x="16" y="36" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5u-Al-eoU" userLabel="lbUltimoGesto">
+                                <rect key="frame" x="16" y="73" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gestos capturados:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WR1-b5-fwE">
+                                <rect key="frame" x="16" y="89" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcO-LO-AHx" userLabel="edGestosCapturados">
+                                <rect key="frame" x="16" y="126" width="343" height="525"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v5u-Al-eoU" secondAttribute="trailing" constant="16" id="2Cf-Zx-n3P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BcO-LO-AHx" secondAttribute="bottom" constant="16" id="66z-HZ-XKo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BcO-LO-AHx" secondAttribute="trailing" constant="16" id="6KL-vs-6FM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bdp-dg-xG9" secondAttribute="trailing" constant="16" id="IhB-DU-bh4"/>
+                            <constraint firstItem="bdp-dg-xG9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="O1K-JP-huZ"/>
+                            <constraint firstItem="BcO-LO-AHx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Pwk-k5-Eyz"/>
+                            <constraint firstItem="bdp-dg-xG9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Tio-xF-LoP"/>
+                            <constraint firstItem="BcO-LO-AHx" firstAttribute="top" secondItem="WR1-b5-fwE" secondAttribute="bottom" constant="16" id="ZUE-KL-Ybm"/>
+                            <constraint firstItem="v5u-Al-eoU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ks6-hI-AVS"/>
+                            <constraint firstItem="WR1-b5-fwE" firstAttribute="top" secondItem="v5u-Al-eoU" secondAttribute="bottom" constant="16" id="oiy-Xz-bMX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WR1-b5-fwE" secondAttribute="trailing" constant="16" id="wkY-si-DXs"/>
+                            <constraint firstItem="WR1-b5-fwE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xxu-JE-DV0"/>
+                            <constraint firstItem="v5u-Al-eoU" firstAttribute="top" secondItem="bdp-dg-xG9" secondAttribute="bottom" constant="16" id="yf8-9C-8oc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TcT-q9-G8Q" appends="YES" id="EHM-VQ-MTj"/>
+                            <outletCollection property="gestureRecognizers" destination="A8M-Us-MMy" appends="YES" id="Rul-F6-h3Z"/>
+                            <outletCollection property="gestureRecognizers" destination="6Ui-a2-0Yz" appends="YES" id="heH-iu-feQ"/>
+                            <outletCollection property="gestureRecognizers" destination="GMN-Qa-3yo" appends="YES" id="DFv-uw-CyC"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="edGestosCapturados" destination="BcO-LO-AHx" id="vSR-bu-Kpn"/>
+                        <outlet property="lbUltimoGesto" destination="v5u-Al-eoU" id="DWC-wu-fV6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TcT-q9-G8Q">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="gg1-Gj-hwN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="A8M-Us-MMy">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="aQ0-wp-CmQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6Ui-a2-0Yz">
+                    <connections>
+                        <action selector="panGesture:" destination="BYZ-38-t0r" id="ttZ-hJ-zz0"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="GMN-Qa-3yo">
+                    <connections>
+                        <action selector="pinchGesture:" destination="BYZ-38-t0r" id="brd-ud-H8T"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
